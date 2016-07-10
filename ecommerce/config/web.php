@@ -38,16 +38,20 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
+                'product'=>'product/index',
+                'product/AddToCart'=>'product/AddToCart'
             ],
         ],
-        */
+        
     ],
     'params' => $params,
+    
 ];
 
 if (YII_ENV_DEV) {
